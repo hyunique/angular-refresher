@@ -1,0 +1,10 @@
+//Local reference
+<label for="personName">Name</label>
+<input type="text" id="personName" #personNameEl>
+<button (click)="onCreatePerson(personNameEl.value)">Create</button>
+
+
+//Two-way binding
+<label for="personName">Name</label>
+<input type="text" id="personName" [(ngModel)]="enteredPersonName">
+<button (click)="onCreatePerson2()">Create</button>
